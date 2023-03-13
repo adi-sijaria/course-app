@@ -1,0 +1,47 @@
+.wishlist-container{
+    position: relative;
+    top:80px;
+}
+
+.wishlist-menu-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap:10px;
+    row-gap: 50px;;
+    margin-top: 50px;
+    position: relative;
+    top:100px
+     
+
+
+}
+.tag{
+    font-family: 'Noto Serif Lao', serif;
+}
+@media screen and (max-width: 900px) {
+   
+    
+    .wishlist-menu-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    column-gap:10px;
+    row-gap: 50px;
+        
+        
+    }
+    
+    @media screen and (max-width: 500px) {
+   
+    
+        .wishlist-menu-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: 5px;
+            
+            
+        }
+       
+        
+      }
+  }

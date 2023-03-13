@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    
+    background-color: rgb(5, 37, 67);
+    color: white;
+    width:100%;
+    position:fixed;
+    /* position: absolute; */
+    z-index: 1;
+    // border-style:outset;
+    
+    
+}
+.logo-container{
+    font-size:  30px;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width:75%;
+    font-size: 20px;
+    
+    
+}
+.wishlist,.home,.menu,.auth,.skills{
+    text-decoration: none;
+    margin:0px 10px;
+    color: rgb(253, 253, 255);
+    cursor: pointer;
+    padding: 0px 10px;
+}
+// .search-box{
+//     position: relative;
+//     top:200px;
+// }

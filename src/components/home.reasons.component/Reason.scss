@@ -1,0 +1,32 @@
+.top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:100px;
+    left:500px;
+    border-style:outset;
+    width:900px;
+    
+    
+    
+    
+    
+
+}
+.top:hover{
+ border-style:outset;
+//  background-color: rgb(5, 37, 67);
+
+}
+.second{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    left:20px;
+    
+}
+.text-box{
+    width:600px;
+    padding:50px;
+    padding-top: 70px;
+}
