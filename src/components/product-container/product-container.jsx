@@ -3,12 +3,15 @@ import { COURSE_DATA } from '../../course-data'
 import "./product-container.scss"
 import { useDispatch } from 'react-redux'
 import { addTocart } from '../../store/slices/Cartslice'
-import {    BsBookmark} from "react-icons/bs";
+import {   BsFillBookmarksFill} from "react-icons/bs";
 import { addToWishlist } from '../../store/slices/Wishlistslice'
 import Button from '../button-component/button.component'
+import { useState } from 'react'
+
 
 
 const Productcontainer = ({product}) => {
+    const [Toogle,setTooglemode]=useState('false')
     const dispatch=useDispatch();
     const {name,duration,starts,price,imagepath}=product
     const addTOCART=(payload)=>{
@@ -17,7 +20,7 @@ const Productcontainer = ({product}) => {
 
     }
     const addTowishlist=(payload)=>{
-        dispatch(addToWishlist(payload));
+        dispatch(addToWishlist(payload),setTooglemode(!Toogle));
 
     }
   return (
@@ -34,7 +37,7 @@ const Productcontainer = ({product}) => {
                 <h3 style={{textAlign:'center'}} ><i>duration : </i>{duration}</h3>
                 <h3 style={{textAlign:'center'}} >starts :{starts}</h3>
                 <div className="button-c">
-                    <Button onClick={()=>addTOCART(product)} >ADD TO CART</Button>
+                    <Button  onClick={()=>addTOCART(product)} >ADD TO CART</Button>
                  
 
 
@@ -42,7 +45,7 @@ const Productcontainer = ({product}) => {
             </div >
             <div>
 
-            <BsBookmark className='wish-button' onClick={()=>addTowishlist(product)}
+            <BsFillBookmarksFill color={Toogle?"green":"red"} size={30}  className='wish-button' onClick={()=>addTowishlist(product)}
                 />
             </div>
                 

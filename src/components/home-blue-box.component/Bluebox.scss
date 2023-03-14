@@ -1,7 +1,7 @@
 .bluebox{
     width: 100vw;
     height:300px;
-    background-color: rgb(5, 37, 67);
+    background-color: #2F2FA2;
     position: relative;
     top:200px;
     display:flex;
@@ -37,4 +37,35 @@
 
 
 
+}
+@media screen and (max-width: 1028px) {
+    .heading{
+        margin-top: 10px;
+        height:200px;
+        color: white;
+        font-style:bold;
+       font-size: 20px;
+       font-family: 'Noto Serif Lao', serif;
+    }
+    .discription{
+        min-width:400px;
+        border-radius: 30px;
+        margin:30px;
+        height:200px;
+        font-size: 10px;
+        color: white;
+        font-family: 'Noto Serif Lao', serif;
+    
+        // background-color:rgb(223, 220, 220) ;
+    
+    
+    
+    }
+    
+   
+   
+    @media screen and (max-width: 902px) {
+   
+    
+}
 }

@@ -9,8 +9,9 @@
     align-items: center;
     height: 75px;
     
-    background-color: rgb(5, 37, 67);
-    color: white;
+    // background-color: rgb(5, 37, 67);
+    background-color: #2F2FA2;
+    color: rgb(247, 246, 246);
     width:100%;
     position:fixed;
     /* position: absolute; */
@@ -34,9 +35,13 @@
 .wishlist,.home,.menu,.auth,.skills{
     text-decoration: none;
     margin:0px 10px;
-    color: rgb(253, 253, 255);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 0px 10px;
+}
+.home{
+    color: #f4203d;
+    
 }
 // .search-box{
 //     position: relative;

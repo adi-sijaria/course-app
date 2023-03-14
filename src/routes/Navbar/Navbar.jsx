@@ -20,7 +20,7 @@ const Navbar = () => {
             <ul className='nav-links'>
                 <Link to='/wishlist' className='wishlist'>
                     <li>
-                        wishlist
+                        Wishlist
                         
                     </li>
                 </Link>
