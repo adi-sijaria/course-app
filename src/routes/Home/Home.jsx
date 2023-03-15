@@ -24,7 +24,7 @@ const Home = () => {
             <img className='image-p' src="https://tse4.mm.bing.net/th?id=OIP.tKyl2J_CIE7daE8B_LLKvQHaHZ&pid=Api&P=0" />
           </div>
           <div className='text'>
-            <h1>Skill It... Win It</h1>
+            <h1 className='tagline'>Skill It... Win It</h1>
             <h3> From any part of the world with a smartphone<br />,your dreams are our motivation</h3>
 
             <div className='os-icons'>

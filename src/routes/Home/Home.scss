@@ -38,9 +38,10 @@
 
 }
 
-h1 {
+.tagline{
     font-family: 'Dancing Script', cursive;
     font-size: 70px;
+    text-shadow: 2px 2px 5px red;
 
 }
 
@@ -136,7 +137,7 @@ h3 {
             height: 300px;
             // color: #F64C72
         }
-        h1 {
+        .tagline {
             font-family: 'Dancing Script', cursive;
             font-size:30px;
         

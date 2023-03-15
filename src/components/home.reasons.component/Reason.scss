@@ -26,7 +26,7 @@
     // justify-content: center;
     // align-items: center;
     // overflow: hidden;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     height: 400px;
     padding: 0px;
     
@@ -61,7 +61,7 @@
         
         
         border-style:outset;
-        width:80vw;
+        width:100vw;
         margin:26px;
         left:10px
         
@@ -82,10 +82,11 @@
         // justify-content: center;
         // align-items: center;
         overflow-x: hidden;
-        scroll-behavior: smooth;
+        scroll-behavior:smooth;
         position: relative;
         // left:20px
         height: fit-content;
+        width: 100%;
         
     }
     .left-side,.right-side{
@@ -110,8 +111,14 @@
     }
     
    
-    @media screen and (max-width: 902px) {
-   
+    @media screen and (max-width: 418px) {
+        .text-box{
+            width:300px;
+            padding:50px;
+            padding-top: 70px;
+            font-size: 10px;
+        }
+        
     }
           
 }

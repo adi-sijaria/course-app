@@ -1,31 +1,33 @@
 .product-card{
     background-color: rgb(190, 207, 224);
-    background-color: #d0d0de;
+    background-color:orange;
     width:fit-content;
     height: 265px;
     display: flex;
     flex-direction: column;
     // border: solid red;
     position: relative;
-    left: 7px;
+    // left: 200px;
     top:-7px;
+    border-style: outset;
+    // border-color: white;
    
     
     
     
 }
-.border-red{
-    width:257px;
-    height: 268px;
-    // height: fit-content;
-   border: solid red;
-   align-items: center;
-   position: relative;
+// .border-red{
+//     width:257px;
+//     height: 268px;
+//     // height: fit-content;
+//    border: solid red;
+//    align-items: center;
+//    position: relative;
   
    
-//    top:40px
+// //    top:40px
 
-}
+// }
 .image-container{
     position: relative;
     top:-40px;
@@ -43,7 +45,8 @@
     
 }
 .name-holder{
-    font-size: 20px;
+    font-size: 25px;
+    font-style: normal;
 }
 .image-holder{
     width:75px;
@@ -68,9 +71,61 @@
 }
 .details{
     margin-bottom: 10px;
-    margin-top: 10px;
+    // margin-top: 10px;
     justify-content: center;
     text-align: center;
     width: 238px;
+    height: 300px;
+    font-style: normal;
+    // font-size: 3rem;
+    // font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(32, 32, 127);
+    color: white;
+    // font-family: 'Rubik', sans-serif;
+
   
 }
+@media screen and (max-width: 500px) {
+   
+    
+    .product-card{
+        height: 300px;
+        width: 300px;
+        margin-bottom: 30px;
+        
+        
+
+    }
+    .product-card:hover{
+        
+        box-shadow: 5px 5px 5px 5px rgb(179, 179, 176);
+            // box-shadow: fade-out($color: #732525, $amount: 0.5);
+            width: 310px;
+            height: 320px;
+            .image-container{
+                box-shadow: 5px 5px 5px 5px rgb(179, 179, 176);
+                
+
+            }
+         
+    }
+    .wish-button{
+        left:90px
+
+    }
+    .details{
+        width: 300px;
+        height: 300px;
+    }
+    .menu-div{
+        margin: 0;
+    }
+    .button-c{
+        left:50px;
+    }
+    .detail-child{
+        font-size: 20px;
+        
+    }
+    
+  }
