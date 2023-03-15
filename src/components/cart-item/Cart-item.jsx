@@ -6,8 +6,8 @@ export const CartItem = ({cartItem}) => {
 
   return (
     <div className='cart-item-container'>
-      <div className='image-holder'>
-        <img className="image-holder"src={imagepath} alt={`${name}`}/>
+      <div className='image-holder2'>
+        <img className="image-holder3"src={imagepath} alt={`${name}`}/>
         </div>
         <div className='item-details'>
             <span className='name'>{name}</span>

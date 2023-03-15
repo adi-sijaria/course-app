@@ -50,7 +50,7 @@ const Cart = () => {
                 <>
                 
                 <div className='checkout-item-container'>
-      <div className='image-container'>
+      <div className='image-container5'>
         <img src={imagepath} alt={`${name}`} />
       </div>
       <span className='name'>{name}</span>

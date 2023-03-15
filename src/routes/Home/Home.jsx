@@ -2,15 +2,21 @@ import React from 'react'
 import "./Home.scss"
 import Reason from '../../components/home.reasons.component/Reason'
 import Bluebox from '../../components/home-blue-box.component/Bluebox'
-import MiniNav from '../../components/mini-nav.component/MiniNav'
+
 import { AiFillApple } from "react-icons/ai"
 import { AiFillAndroid } from "react-icons/ai"
 import { AiOutlineArrowRight} from "react-icons/ai"
+import { useNavigate } from 'react-router-dom'
+
 import "./Home.scss"
 const Home = () => {
+  const navigate=useNavigate();
+  const goToCheckoutHandler=()=>{
+    navigate('./menu')
+  }
   return (
     <>
-    <div className='Home'>
+    
       
       
         <div className='top'>
@@ -30,11 +36,12 @@ const Home = () => {
         </div>
         {/* <div className='image-2'> */}
             {/* <img className='desk-photo' src="https://tse1.explicit.bing.net/th?id=OIP.hXfAdfTjfra5usVwZQN21AHaB6&pid=Api&P=0"/> */}
-            <button  className="button-course" > explore courses <AiOutlineArrowRight/></button>
+            <button onClick={()=>goToCheckoutHandler()}  className="button-course" > explore courses <AiOutlineArrowRight/></button>
 
 
           {/* </div> */}
-    </div>
+    
+   <Reason/>
     <Bluebox/>
     </>
   )

@@ -24,10 +24,13 @@ const Productcontainer = ({product}) => {
 
     }
   return (
+    <div className='border-red'>
    
     <div className="product-card" >
         <div className='image-container'>
         <img src={imagepath} className="image-holder" alt={`${name}`} />
+        <BsFillBookmarksFill color={Toogle?"green":"red"} size={30}  className='wish-button' onClick={()=>addTowishlist(product)}
+                />
         </div>
             
             <div className="details">
@@ -45,11 +48,11 @@ const Productcontainer = ({product}) => {
             </div >
             <div>
 
-            <BsFillBookmarksFill color={Toogle?"green":"red"} size={30}  className='wish-button' onClick={()=>addTowishlist(product)}
-                />
+           
             </div>
                 
                 
+        </div>
         </div>
   )
 }

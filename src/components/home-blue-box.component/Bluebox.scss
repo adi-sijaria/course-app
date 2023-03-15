@@ -39,16 +39,19 @@
 
 }
 @media screen and (max-width: 1028px) {
+    .bluebox{
+        height: 150px;
+    }
     .heading{
         margin-top: 10px;
-        height:200px;
+        height:100px;
         color: white;
         font-style:bold;
        font-size: 20px;
        font-family: 'Noto Serif Lao', serif;
     }
     .discription{
-        min-width:400px;
+        min-width:50px;
         border-radius: 30px;
         margin:30px;
         height:200px;
@@ -64,7 +67,34 @@
     
    
    
-    @media screen and (max-width: 902px) {
+    @media screen and (max-width: 393px) {
+        .heading{
+            margin-top: 10px;
+            height:60px;
+            color: white;
+            font-style:bold;
+           font-size: 10px;
+           font-family: 'Noto Serif Lao', serif;
+        }
+        .discription{
+            min-width:30px;
+            border-radius: 30px;
+            // margin:30px;
+            height:200px;
+            font-size: 10px;
+            color: white;
+            font-family: 'Noto Serif Lao', serif;
+        
+            // background-color:rgb(223, 220, 220) ;
+        
+        
+        
+        }
+        .bluebox{
+            width:398px;
+            // left:10px
+        }
+
    
     
 }
