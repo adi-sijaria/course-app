@@ -3,7 +3,7 @@
     height:300px;
     background-color: #2F2FA2;
     position: relative;
-    top:200px;
+    top:1600px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,6 +41,8 @@
 @media screen and (max-width: 1028px) {
     .bluebox{
         height: 150px;
+        position: relative;
+        top:100px
     }
     .heading{
         margin-top: 10px;

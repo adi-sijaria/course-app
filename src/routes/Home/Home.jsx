@@ -41,7 +41,7 @@ const Home = () => {
 
           {/* </div> */}
     
-   <Reason/>
+    <Reason/>
     <Bluebox/>
     </>
   )
